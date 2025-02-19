@@ -3,3 +3,4 @@ wagtail
 wagtail-font-awesome-svg
 wagtailcodeblock
 wagtail-modeladmin
+python-dotenv
