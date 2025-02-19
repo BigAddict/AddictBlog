@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "modelcluster",
     "taggit",
     "wagtailcodeblock",
+    "wagtail_modeladmin",
     "wagtail.contrib.search_promotions",
     "django.contrib.admin",
     "django.contrib.auth",
