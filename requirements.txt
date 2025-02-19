@@ -1,0 +1,4 @@
+Django
+wagtail
+wagtail-font-awesome-svg
+wagtailcodeblock
