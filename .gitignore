@@ -59,3 +59,4 @@ node_modules/
 *.log
 local_settings.py
 media/
+staticfiles
