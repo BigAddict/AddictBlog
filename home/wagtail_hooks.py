@@ -40,14 +40,11 @@ class CustomAccessibilityItem(AccessibilityItem):
 
 
 @hooks.register("construct_wagtail_userbar")
-def replace_userbar_accessibility_item(request, items):
+def replace_userbar_accessibility_item(request, items, page):
     items[:] = [
         CustomAccessibilityItem() if isinstance(item, AccessibilityItem) else item
         for item in items
     ]
-
-
-
 
 
 class PersonViewSet(SnippetViewSet):

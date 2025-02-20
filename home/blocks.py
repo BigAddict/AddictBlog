@@ -9,6 +9,7 @@ from wagtail.blocks import (
 from wagtail.embeds.blocks import EmbedBlock
 from wagtail.images.blocks import ImageChooserBlock
 from wagtailcodeblock.blocks import CodeBlock
+from wagtailmarkdown.blocks import MarkdownBlock
 
 
 class ImageBlock(StructBlock):
@@ -98,3 +99,4 @@ class BaseStreamBlock(StreamBlock):
         icon="media",
         template="blocks/embed_block.html",
     )
+    markdown = MarkdownBlock()

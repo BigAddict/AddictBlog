@@ -11,7 +11,7 @@ DEBUG = False
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = ["bigaddict.shop", "www.bigaddict.shop"]
+ALLOWED_HOSTS = ["bigaddict.shop", "www.bigaddict.shop", "127.0.0.1"]
 
 EMAIL_BACKEND = os.getenv("EMAIL_BACKEND")
 EMAIL_HOST = os.getenv("EMAIL_HOST")
