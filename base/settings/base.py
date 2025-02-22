@@ -191,3 +191,8 @@ WAGTAILMARKDOWN = {
     "tab_length": 4,  # optional. Sets the length of tabs used by python-markdown to render the output. This is the number of spaces used to replace with a tab character. Defaults to 4.
     "safe_mode": False,
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://bigaddict.shop",
+    "https://www.bigaddict.shop",
+]
