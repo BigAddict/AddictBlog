@@ -11,7 +11,7 @@ DEBUG = False
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = ["bigaddict.shop", "www.bigaddict.shop", "127.0.0.1"]
+ALLOWED_HOSTS = ['bigaddict.shop', 'www.bigaddict.shop', '127.0.0.1', 'localhost']
 
 EMAIL_BACKEND = os.getenv("EMAIL_BACKEND")
 EMAIL_HOST = os.getenv("EMAIL_HOST")
@@ -19,6 +19,12 @@ EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS")
 EMAIL_PORT = os.getenv("EMAIL_PORT")
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+
+WAGTAILADMIN_BASE_URL = "https://bigaddict.shop"
 
 try:
     from .local import *
